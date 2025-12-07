@@ -177,10 +177,10 @@ Start-Process -WindowStyle Hidden -FilePath kubectl -ArgumentList `
 1.18. You can also port-forward ports for MinIO and MDS, by using the WatsonX.data Developer installer UI again
 ![Port-forward for MinIO and MDS](img/wxd124_portforward_forminio_and_mds.png)
 
-1.19. Test the port-forward for MinIO by trying to open the login page to MinIO
+1.19. Test the port-forward for MinIO by trying to open the login page to MinIO (it should be: ```localhost:9001```)
 ![Login page to MinIO](img/wxd125_loginpagetominio.png)
 
-1.20. Should you need to shutdown your Windows 11 or restart, go to your Podman installation and re-run the kind-wxd-control-plane container. 
+1.20. Should you need to shutdown or restart your Windows 11, your WatsonX.data Developer needs a restart too. In such a case, after logging in to your Windows account again go to your Podman installation and just re-run the kind-wxd-control-plane container. 
 ![Restarting kind container in Podman](img/wxd126_podmanview_oncontainer_kind-wxd-control-plane.png)
 
 1.21. Remember also of resetting the portforwards setup after you restarted your Windows laptop or save those commands to every startup event. 
