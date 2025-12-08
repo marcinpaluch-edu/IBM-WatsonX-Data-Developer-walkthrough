@@ -1,3 +1,5 @@
+December 9, 2025.
+
 # IBM WatsonX Data Developer walkthrough
 If you attended the IBM TechExchange event in Orlando this October (2025), you might have learnt on the new software from IBM: WatsonX.data Developer edition. 
 Here is more information on this announcement online: [IBM launches watsonx.data developer edition: Free, local and ready to power your next prototype](https://www.ibm.com/new/announcements/ibm-launches-watsonx-data-developer-edition-to-power-your-next-prototype).
@@ -11,3 +13,6 @@ In this document I'll show in a step-by-step walkthrough form, all steps require
 Parts:
 
 [Part 1. Installation on Windows 11](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%201%20-%20Installation%20on%20Windows%2011.md)
+
+[Part 2. Configuration on Windows 11](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%202%20-%20Configuration%20on%20Windows%2011.md)
+
