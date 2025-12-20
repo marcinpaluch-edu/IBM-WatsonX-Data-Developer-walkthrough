@@ -16,3 +16,10 @@ Parts:
 
 [Part 2. Configuration on Windows 11](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%202%20-%20Configuration%20on%20Windows%2011.md)
 
+[Part 3. Data Ingestion - Under construction](./README.md)
+
+[Part 4. Feed into AI or ML models](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%204%20-%20Feed%20into%20AI%20or%20ML%20models.md)
+
+[Part 5. Connecting BI (example PowerBI)](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%205%20-%20Connecting%20BI%20(example%20PowerBI).md)
+
+[Part 6. Troubleshooting guide](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%206%20-%20Troubleshooting.md)
