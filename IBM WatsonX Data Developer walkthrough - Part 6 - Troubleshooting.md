@@ -3,7 +3,7 @@
 This document collects various hints, tips and tricks in case your installation on WatsonX.data required troubleshooting. 
 
 List of contents:
-[6.1. Solving error catalog xxx does not exist](#61-error-catalog-iceberg_data-does-not-exist)
+- [6.1. Solving error catalog xxx does not exist](#61-error-catalog-iceberg_data-does-not-exist)
 
 ### 6.1. Error Catalog iceberg_data does not exist.
 This error happened many times on my laptop and I haven't yet figured out why it may happen. It's the problem with Presto, not the Iceberg tables. You log in into your WatsonX.data Developer UI like everyday but unexpectedly in the moment of browing your tables in the Data Manager view or Query workspace view those navigation tree items don't expand and you receive error popup messages on the right side of the screen, just like on the picture below:
