@@ -3,9 +3,9 @@
 In [Part 3. Data Ingestion](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion.md) I did show how to process new data through 3 layers: bronze, silver and gold, in WatsonX.data Developer. In this part I will show how to connect to WatsonX.data, both Developer local install and IBM Cloud-based SaaS system, to use the data collected in the Iceberg tables in AI/ML models.
 
 Part 4. will consist of the following chapters:
-[4.1. Connecting Watsonx.data Developer local laptop Presto with custom Python code](#41-connecting-from-custom-python-code)
-[4.2. Connecting SaaS WatsonX.data Presto with SaaS WatsonX.ai jupyter notebook](#42-connecting-from-watsonxai-jupyter-notebook)
-[4.3. Connecting SaaS WatsonX.data Presto with SaaS WatsonX.ai data refinery project](#43-connecting-from-watsonxai-for-data-preparation-refinery-and-visualisation)
+- [4.1. Connecting Watsonx.data Developer local laptop Presto with custom Python code](#41-connecting-from-custom-python-code)
+- [4.2. Connecting SaaS WatsonX.data Presto with SaaS WatsonX.ai jupyter notebook](#42-connecting-from-watsonxai-jupyter-notebook)
+- [4.3. Connecting SaaS WatsonX.data Presto with SaaS WatsonX.ai data refinery project](#43-connecting-from-watsonxai-for-data-preparation-refinery-and-visualisation)
 
 Let's start!
 
