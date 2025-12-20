@@ -182,7 +182,7 @@ from trino.auth import JWTAuthentication
 
 # ===== CONFIG =====
 HOST = "<change_to_your_watsonxdata_hostname>"   # e.g. <instance>.lakehouse.cloud.ibm.com
-PORT = 443
+PORT = <port> # e.g. 443
 CATALOG = "iceberg_data"              # or hive_data, sample_data, etc.
 SCHEMA = "default"
 TRINO_USER = "<change_to_your_username>"             # often required even with token
