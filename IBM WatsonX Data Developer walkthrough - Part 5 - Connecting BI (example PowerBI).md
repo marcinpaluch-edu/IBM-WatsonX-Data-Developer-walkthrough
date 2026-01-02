@@ -1,6 +1,6 @@
 ## Part 5. WatsonX.data Developer connected by BI tools - for example PowerBI
 
-After successful ingestion of the data into WatsonX.Data Developer and building a model according to the Medallion Architecture (described in [Part 3. Data Ingestion](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20(Medallion%20architecture).md) in this repository) the next step is to consume that data and one of the ways of consuming it is exposing it to business intelligence tools for BI analysis and dashboarding. This chapter will show how to connect PowerBI to WatsonX.data Developer-based Presto service. 
+After successful ingestion of the data into WatsonX.Data Developer and building a model according to the Medallion Architecture (described in [Part 3. Data Ingestion (Medallion architecture)](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20(Medallion%20architecture).md) in this repository) the next step is to consume that data and one of the ways of consuming it is exposing it to business intelligence tools for BI analysis and dashboarding. This chapter will show how to connect PowerBI to WatsonX.data Developer-based Presto service. 
 
 In the official WatsonX.data 
 [documentation](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-bi_intro) you can find two (2) ODBC engines mentioned, which can help you to connect to the Presto service inside of your WatsonX.data - Simba and CData. 
