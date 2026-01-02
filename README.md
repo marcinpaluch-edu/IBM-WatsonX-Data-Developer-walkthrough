@@ -16,7 +16,7 @@ Parts:
 
 [Part 2. Configuration on Windows 11](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%202%20-%20Configuration%20on%20Windows%2011.md)
 
-[Part 3. Data Ingestion - Under construction](./README.md)
+[Part 3. Data Ingestion (Medallion architecture)](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20(Medallion%20architecture).md)
 
 [Part 4. Feed into AI or ML models](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%204%20-%20Feed%20into%20AI%20or%20ML%20models.md)
 
