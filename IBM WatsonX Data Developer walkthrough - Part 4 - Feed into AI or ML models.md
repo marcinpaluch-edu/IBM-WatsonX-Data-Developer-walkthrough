@@ -1,3 +1,8 @@
+---
+layout: default
+title: Part 4 - Feed into AI or ML models
+---
+
 ## Part 4. WatsonX.data Developer outputs feed into AI/ML model
 
 In [Part 3. Data Ingestion](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20%28Medallion%20architecture%29.md) I did show how to process new data through 3 layers: bronze, silver and gold, in WatsonX.data Developer. In this part I will show how to connect to WatsonX.data, both Developer local install and IBM Cloud-based SaaS system, to use the data collected in the Iceberg tables in AI/ML models.

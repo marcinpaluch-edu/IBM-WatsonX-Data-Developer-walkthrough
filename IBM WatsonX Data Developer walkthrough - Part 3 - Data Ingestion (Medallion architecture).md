@@ -1,3 +1,8 @@
+---
+layout: default
+title: Part 3 - Data Ingestion (Medallion architecture)
+---
+
 ## Part 3. Data Ingestion (Medallion architecture)
 
 In [IBM WatsonX Data Developer walkthrough - Part 2 - Configuration on Windows 11](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%202%20-%20Configuration%20on%20Windows%2011.md) I described the necessary steps to configure a connection from WatsonX.data Developer Edition version 1.0.0 on Windows 11 OS to locally available data source, such as PostgreSQL database server. I also demonstrated basics of data ingestion in WatsonX.data by using Spark engine and dummy Postgres database built into one of the pods of WatsonX.data Developer.  

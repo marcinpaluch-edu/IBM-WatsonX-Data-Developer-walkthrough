@@ -1,3 +1,8 @@
+---
+layout: default
+title: Part 6 - Troubleshooting guide
+---
+
 ## Part 6. WatsonX.data Developer - Troubleshooting guide
 
 This document collects various hints, tips and tricks in case your installation on WatsonX.data required troubleshooting. 

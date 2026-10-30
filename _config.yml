@@ -1,9 +1,12 @@
 title: IBM WatsonX.data Developer Walkthrough
 description: Step-by-step developer guide and walkthrough for IBM WatsonX.data Developer Edition and SaaS
-theme: jekyll-theme-cayman
-show_downloads: true
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  hard_wrap: false
+theme: jekyll-theme-slate
+show_downloads: false
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+
+relative_links:
+  enabled: true
+  collections: true

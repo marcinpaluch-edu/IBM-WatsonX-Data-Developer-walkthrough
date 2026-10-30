@@ -1,3 +1,8 @@
+---
+layout: default
+title: Part 2 - Configuration on Windows 11
+---
+
 ## Part 2. WatsonX.data Developer Configuration
 
 In [Part 1. WatsonX.data Developer Installation](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%201%20-%20Installation%20on%20Windows%2011.md) I described the necessary steps to install WatsonX.data Developer Edition version 1.0.0 on Windows 11 OS. This part will focus on further configuration of the data sources and your first data ingestion into Apache Iceberg.

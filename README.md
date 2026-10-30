@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 December 9, 2025.
 
 # IBM WatsonX Data Developer walkthrough
