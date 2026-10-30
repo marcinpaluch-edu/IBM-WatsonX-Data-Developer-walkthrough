@@ -117,10 +117,10 @@ cat /etc/hosts
 ![Checking value of host.containers.internal](img/wxd223_powershell_check_hostcontainersinternal_value.png)
 
 
-2.25. So the value exists. But unlike on MacOS, connection to that host in Windows installation will fail:
+2.24. So the value exists. But unlike on MacOS, connection to that host in Windows installation will fail:
 ![host.containers.internal connection fails](img/wxd224_GUI_hostcontainersinternal_connectionfails.png)
 
-2.26. Back to the container, you may want to check if the port is even reachable from it. Run the command:
+2.25. Back to the container, you may want to check if the port is even reachable from it. Run the command:
 ```shell
 nc -vz host.containers.internal 5432
 ```

@@ -41,3 +41,6 @@ print(cursor.fetchall())
 
 cursor.execute("SHOW TABLES FROM iceberg_data.gold")
 print(cursor.fetchall())
+
+cursor.close()
+conn.close()

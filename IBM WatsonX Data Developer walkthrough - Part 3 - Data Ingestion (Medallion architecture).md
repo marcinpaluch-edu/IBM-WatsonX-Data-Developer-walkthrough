@@ -726,7 +726,7 @@ The result is: 7 inserted rows:
 
 This step ends the incremental / CDC-ready pattern for promoting data from bronze to silver.
 
-### 3.6. Incremental / CDC-ready pattern - gold
+### 3.7. Incremental / CDC-ready pattern - gold
 
 The gold tables incremental and CDC-ready pattern is going to be different for every table. The approach will depend on the type of aggregation and the nature of the data in each table. The daily revenue data requires adding new days incrementally, while customer lifetime value will change completely with every batch of new input data. 
 
@@ -758,7 +758,7 @@ Unfortunately what doesn't work in Presto in WatsonX.data is _bucket partitionin
 ```
 Why buckets - they prevent millions of tiny partitions and ensure even distribution. Thanks to choosing customer_id it could scale to millions of customers. But like I mentioned above bucket partitioning is not available in Presto in WatsonX.data and I won't use any partitioning at all.  
 
-3.6.1. In the light of what I wrote above, the gold table `gold.orders_revenue_daily` grows by date slices. Iceberg uses partitioning to skip files at query time and minimizes file scans, which is why it is perfect for daily aggregates.
+3.7.1. In the light of what I wrote above, the gold table `gold.orders_revenue_daily` grows by date slices. Iceberg uses partitioning to skip files at query time and minimizes file scans, which is why it is perfect for daily aggregates.
 
 Appending recomputed Gold rows approach for `gold.orders_revenue_daily` table requires first check what are the new dates of orders in `silver.orders_clean`. We know from the input data that the new dates are from 2024-11-07 to 2024-11-11. This is the query which can confirm that:
 
@@ -774,7 +774,7 @@ ORDER BY order_date;
 The new dates are as expected:
 ![](img/wxd321_watsonxdata_queryworkspace_selectingnewdatesinsilver_fromgold.png)
 
-3.6.2. Run the following query to update `gold.orders_revenue_daily` with only new updates:
+3.7.2. Run the following query to update `gold.orders_revenue_daily` with only new updates:
 ```sql
 INSERT INTO gold.orders_revenue_daily
 SELECT
@@ -820,12 +820,12 @@ The result of the query execution:
 
 It's worth noticing that although I could detect new or changed Silver rows they're are all inserted with a new order_date and therefore I don't have to recomputes full aggregates for affected dates this time. 
 
-3.6.3. The table `gold.orders_revenue_daily` is now updated with new rows incrementally:
+3.7.3. The table `gold.orders_revenue_daily` is now updated with new rows incrementally:
 ![](img/wxd323_watsonxdata_datamanager_gold_dailyrevenue_updated.png)
 
 Make note. You may want to refresh your table view after incremental inserts (1). Check the new number of records to confirm the difference (2). 
 
-3.6.4. The approach to updating the client lifetime value is different and I need to rebuild the whole table. I don't have MERGE INTO in Presto at WatsonX.data and that approach of rebuilding the whole table is scalable, aligns with Iceberg best practices and fits watsonx.data constraints.
+3.7.4. The approach to updating the client lifetime value is different and I need to rebuild the whole table. I don't have MERGE INTO in Presto at WatsonX.data and that approach of rebuilding the whole table is scalable, aligns with Iceberg best practices and fits watsonx.data constraints.
 
 To rebuilt the whole table I need a brand new one with the freshest data from `silver.orders_clean`. I'm creating a new, temporary table for that with identical schema as the original one:
 
@@ -852,7 +852,7 @@ What is noticeable - the query creates a table with 8 rows while the original ta
 
 ![](img/wxd324_watsonxdata_queryworkspace_creating_temporarycustomerltv.png)
 
-3.6.5. Let's verify if new data in the temporary table reflects the changes I worked on. I'm running a special query designed for that purpose:
+3.7.5. Let's verify if new data in the temporary table reflects the changes I worked on. I'm running a special query designed for that purpose:
 
 ```sql
 SELECT
@@ -986,7 +986,7 @@ And the same on the screenshot of WatsonX.data Developer Query workspace:
 
 I can see that I can indeed expect an increase from 2 customers - 101 and 102. Btw. I made the most money on customer_id 102 (428.99 USD), although customer_id 101 made the most of the orders (4 orders). I'm indeed loosing customer 104 and indeed customers 201, 203 and 204 are going to be shown as new. This means I'm moving from 6 to 8 customers in my report after adding new orders. 
 
-3.6.6. I finally do the full replacement. I run query:
+3.7.6. I finally do the full replacement. I run query:
 ```sql
 DROP TABLE gold.customer_ltv;
 ALTER TABLE gold.customer_ltv_tmp
