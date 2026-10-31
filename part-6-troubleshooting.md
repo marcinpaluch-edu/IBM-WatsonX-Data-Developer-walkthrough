@@ -3,6 +3,8 @@ layout: default
 title: Part 6 - Troubleshooting guide
 ---
 
+[&laquo; Previous: Part 5. Connecting BI (example PowerBI)](./part-5-connecting-bi-example-powerbi.md) | [Home](./README.md)
+
 ## Part 6. WatsonX.data Developer - Troubleshooting guide
 
 This document collects various hints, tips and tricks in case your installation on WatsonX.data required troubleshooting. 
@@ -89,4 +91,4 @@ and go to the browser and see Data Manager or Query Workspace to confirm that al
 
 This is the end of Part 6. Troubleshooting.
 
-[Back to Readme.md](./README.md)
+[&laquo; Previous: Part 5. Connecting BI (example PowerBI)](./part-5-connecting-bi-example-powerbi.md) | [Home](./README.md)

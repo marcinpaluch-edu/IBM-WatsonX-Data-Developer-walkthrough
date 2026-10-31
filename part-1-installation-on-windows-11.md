@@ -3,6 +3,8 @@ layout: default
 title: Part 1 - Installation on Windows 11
 ---
 
+[Home](./README.md) | [Next: Part 2. Configuration on Windows 11 &raquo;](./part-2-configuration-on-windows-11.md)
+
 ## Part 1. WatsonX.data Developer installation on Windows
 I tried the installation on two OS platforms: MacOS and Windows 11. The reason I'm focusing on Windows 11 in this paper is because I find the early version made available, 1.0.0, to be more difficult to install on that OS. Yet many readers use Windows, so it's useful to know how to install it all. 
 
@@ -194,4 +196,4 @@ After starting it up, you'll be able to login to WatsonX.data Developer again.
 
 This is the end of Part 1. Installation.
 
-[Back to Readme.md](./README.md)
+[Home](./README.md) | [Next: Part 2. Configuration on Windows 11 &raquo;](./part-2-configuration-on-windows-11.md)

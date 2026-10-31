@@ -3,9 +3,11 @@ layout: default
 title: Part 2 - Configuration on Windows 11
 ---
 
+[&laquo; Previous: Part 1. Installation on Windows 11](./part-1-installation-on-windows-11.md) | [Home](./README.md) | [Next: Part 3. Data Ingestion (Medallion architecture) &raquo;](./part-3-data-ingestion-medallion-architecture.md)
+
 ## Part 2. WatsonX.data Developer Configuration
 
-In [Part 1. WatsonX.data Developer Installation](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%201%20-%20Installation%20on%20Windows%2011.md) I described the necessary steps to install WatsonX.data Developer Edition version 1.0.0 on Windows 11 OS. This part will focus on further configuration of the data sources and your first data ingestion into Apache Iceberg.
+In [Part 1. WatsonX.data Developer Installation](./part-1-installation-on-windows-11.md) I described the necessary steps to install WatsonX.data Developer Edition version 1.0.0 on Windows 11 OS. This part will focus on further configuration of the data sources and your first data ingestion into Apache Iceberg.
 
 ### I. Connecting to internal postgres
 You may have noticed that WatsonX.data Developer comes with built-in pod containing Postgres database. It is intended for internal use but you may want to understand if there's any way to connect to it or perhaps to use it for learning purposes. Here's the way.
@@ -246,4 +248,4 @@ But it is not subject of this material.
 
 This is the end of Part 2. Configuration.
 
-[Back to Readme.md](./README.md)
+[&laquo; Previous: Part 1. Installation on Windows 11](./part-1-installation-on-windows-11.md) | [Home](./README.md) | [Next: Part 3. Data Ingestion (Medallion architecture) &raquo;](./part-3-data-ingestion-medallion-architecture.md)

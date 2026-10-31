@@ -3,9 +3,11 @@ layout: default
 title: Part 4 - Feed into AI or ML models
 ---
 
+[&laquo; Previous: Part 3. Data Ingestion (Medallion architecture)](./part-3-data-ingestion-medallion-architecture.md) | [Home](./README.md) | [Next: Part 5. Connecting BI (example PowerBI) &raquo;](./part-5-connecting-bi-example-powerbi.md)
+
 ## Part 4. WatsonX.data Developer outputs feed into AI/ML model
 
-In [Part 3. Data Ingestion](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20%28Medallion%20architecture%29.md) I did show how to process new data through 3 layers: bronze, silver and gold, in WatsonX.data Developer. In this part I will show how to connect to WatsonX.data, both Developer local install and IBM Cloud-based SaaS system, to use the data collected in the Iceberg tables in AI/ML models.
+In [Part 3. Data Ingestion](./part-3-data-ingestion-medallion-architecture.md) I did show how to process new data through 3 layers: bronze, silver and gold, in WatsonX.data Developer. In this part I will show how to connect to WatsonX.data, both Developer local install and IBM Cloud-based SaaS system, to use the data collected in the Iceberg tables in AI/ML models.
 
 Part 4. will consist of the following chapters:
 - [4.1. Connecting Watsonx.data Developer local laptop Presto with custom Python code](#41-connecting-from-custom-python-code)
@@ -407,4 +409,4 @@ You can further explore options to prepare, refine and visualize your data. The 
 
 This is the end of Part 4. Feed into AI or ML models.
 
-[Back to Readme.md](./README.md)
+[&laquo; Previous: Part 3. Data Ingestion (Medallion architecture)](./part-3-data-ingestion-medallion-architecture.md) | [Home](./README.md) | [Next: Part 5. Connecting BI (example PowerBI) &raquo;](./part-5-connecting-bi-example-powerbi.md)

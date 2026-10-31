@@ -3,9 +3,11 @@ layout: default
 title: Part 3 - Data Ingestion (Medallion architecture)
 ---
 
+[&laquo; Previous: Part 2. Configuration on Windows 11](./part-2-configuration-on-windows-11.md) | [Home](./README.md) | [Next: Part 4. Feed into AI or ML models &raquo;](./part-4-feed-into-ai-or-ml-models.md)
+
 ## Part 3. Data Ingestion (Medallion architecture)
 
-In [IBM WatsonX Data Developer walkthrough - Part 2 - Configuration on Windows 11](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%202%20-%20Configuration%20on%20Windows%2011.md) I described the necessary steps to configure a connection from WatsonX.data Developer Edition version 1.0.0 on Windows 11 OS to locally available data source, such as PostgreSQL database server. I also demonstrated basics of data ingestion in WatsonX.data by using Spark engine and dummy Postgres database built into one of the pods of WatsonX.data Developer.  
+In [IBM WatsonX Data Developer walkthrough - Part 2 - Configuration on Windows 11](./part-2-configuration-on-windows-11.md) I described the necessary steps to configure a connection from WatsonX.data Developer Edition version 1.0.0 on Windows 11 OS to locally available data source, such as PostgreSQL database server. I also demonstrated basics of data ingestion in WatsonX.data by using Spark engine and dummy Postgres database built into one of the pods of WatsonX.data Developer.  
 
 In part III. I will further focus on Data Ingestion. I will create new schemas configuration and organize all data into 3 layers: bronze, silver and gold, which follows so called Medallion Architecture, the design pattern for data lakehouses. 
 
@@ -1009,6 +1011,4 @@ It indeed shows now 8 customers result for life time value (revenue).
 
 This is the end of Part 3. Data Ingestion (Medallion architecture).
 
-[Back to Readme.md](./README.md)
-
-
+[&laquo; Previous: Part 2. Configuration on Windows 11](./part-2-configuration-on-windows-11.md) | [Home](./README.md) | [Next: Part 4. Feed into AI or ML models &raquo;](./part-4-feed-into-ai-or-ml-models.md)
