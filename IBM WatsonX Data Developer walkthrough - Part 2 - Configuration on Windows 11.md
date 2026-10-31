@@ -1,3 +1,8 @@
+---
+layout: default
+title: Part 2 - Configuration on Windows 11
+---
+
 ## Part 2. WatsonX.data Developer Configuration
 
 In [Part 1. WatsonX.data Developer Installation](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%201%20-%20Installation%20on%20Windows%2011.md) I described the necessary steps to install WatsonX.data Developer Edition version 1.0.0 on Windows 11 OS. This part will focus on further configuration of the data sources and your first data ingestion into Apache Iceberg.
@@ -117,10 +122,10 @@ cat /etc/hosts
 ![Checking value of host.containers.internal](img/wxd223_powershell_check_hostcontainersinternal_value.png)
 
 
-2.25. So the value exists. But unlike on MacOS, connection to that host in Windows installation will fail:
+2.24. So the value exists. But unlike on MacOS, connection to that host in Windows installation will fail:
 ![host.containers.internal connection fails](img/wxd224_GUI_hostcontainersinternal_connectionfails.png)
 
-2.26. Back to the container, you may want to check if the port is even reachable from it. Run the command:
+2.25. Back to the container, you may want to check if the port is even reachable from it. Run the command:
 ```shell
 nc -vz host.containers.internal 5432
 ```

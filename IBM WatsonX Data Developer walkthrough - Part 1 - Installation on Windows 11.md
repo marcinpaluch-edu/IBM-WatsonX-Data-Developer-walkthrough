@@ -1,3 +1,8 @@
+---
+layout: default
+title: Part 1 - Installation on Windows 11
+---
+
 ## Part 1. WatsonX.data Developer installation on Windows
 I tried the installation on two OS platforms: MacOS and Windows 11. The reason I'm focusing on Windows 11 in this paper is because I find the early version made available, 1.0.0, to be more difficult to install on that OS. Yet many readers use Windows, so it's useful to know how to install it all. 
 

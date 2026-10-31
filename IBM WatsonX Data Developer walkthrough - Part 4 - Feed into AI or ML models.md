@@ -1,6 +1,11 @@
+---
+layout: default
+title: Part 4 - Feed into AI or ML models
+---
+
 ## Part 4. WatsonX.data Developer outputs feed into AI/ML model
 
-In [Part 3. Data Ingestion](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20(Medallion%20architecture).md) I did show how to process new data through 3 layers: bronze, silver and gold, in WatsonX.data Developer. In this part I will show how to connect to WatsonX.data, both Developer local install and IBM Cloud-based SaaS system, to use the data collected in the Iceberg tables in AI/ML models.
+In [Part 3. Data Ingestion](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20%28Medallion%20architecture%29.md) I did show how to process new data through 3 layers: bronze, silver and gold, in WatsonX.data Developer. In this part I will show how to connect to WatsonX.data, both Developer local install and IBM Cloud-based SaaS system, to use the data collected in the Iceberg tables in AI/ML models.
 
 Part 4. will consist of the following chapters:
 - [4.1. Connecting Watsonx.data Developer local laptop Presto with custom Python code](#41-connecting-from-custom-python-code)
@@ -76,6 +81,9 @@ print(cursor.fetchall())
 
 cursor.execute("SHOW TABLES FROM iceberg_data.gold")
 print(cursor.fetchall())
+
+cursor.close()
+conn.close()
 ```
 
 You can also download the file from [here](src/test_wxd_conn.py).
@@ -142,11 +150,11 @@ Ignore initial tasks:
 
 ![](img/wxd414_watsonxsaas_creatingnewproject.png)
 
-4.2.9. Once the project was creared, click Assets tab to add the notebook:
+4.2.9. Once the project was created, click Assets tab to add the notebook:
 
 ![](img/wxd415_watsonxsaas_newprojectview_clickassets.png)
 
-4.2.10. Click New Assset + button
+4.2.10. Click New Asset + button
 
 ![](img/wxd416_watsonxsaas_clicknewasset.png)
 
@@ -174,22 +182,20 @@ Give it a moment for the notebook to load:
 
 ![](img/wxd421_watsonxsaas_installingtrinoviapip.png)
 
-4.2.15. After successfull installation of trino, run the script similar to the one you created for your local installation of WatsonX.data Developer, this time for WatsonX.data on IBM Cloud (SaaS):
+4.2.15. After successful installation of trino, run the script similar to the one you created for your local installation of WatsonX.data Developer, this time for WatsonX.data on IBM Cloud (SaaS):
 
 ```python
+import requests
 from trino.dbapi import connect
 from trino.auth import JWTAuthentication
 
 # ===== CONFIG =====
 HOST = "<change_to_your_watsonxdata_hostname>"   # e.g. <instance>.lakehouse.cloud.ibm.com
-PORT = <port> # e.g. 443
-CATALOG = "iceberg_data"              # or hive_data, sample_data, etc.
+PORT = 443                                       # e.g. 443
+CATALOG = "iceberg_data"                         # or hive_data, sample_data, etc.
 SCHEMA = "default"
-TRINO_USER = "<change_to_your_username>"             # often required even with token
+TRINO_USER = "<change_to_your_username>"         # often required even with token
 IBM_API_KEY = "<change_to_your_apikey>"
-
-
-import requests
 
 url = "https://iam.cloud.ibm.com/identity/token"
 

@@ -1,6 +1,11 @@
+---
+layout: default
+title: Part 5 - Connecting BI (example PowerBI)
+---
+
 ## Part 5. WatsonX.data Developer connected by BI tools - for example PowerBI
 
-After successful ingestion of the data into WatsonX.Data Developer and building a model according to the Medallion Architecture (described in [Part 3. Data Ingestion (Medallion architecture)](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20(Medallion%20architecture).md) in this repository) the next step is to consume that data and one of the ways of consuming it is exposing it to business intelligence tools for BI analysis and dashboarding. This chapter will show how to connect PowerBI to WatsonX.data Developer-based Presto service. 
+After successful ingestion of the data into WatsonX.Data Developer and building a model according to the Medallion Architecture (described in [Part 3. Data Ingestion (Medallion architecture)](./IBM%20WatsonX%20Data%20Developer%20walkthrough%20-%20Part%203%20-%20Data%20Ingestion%20%28Medallion%20architecture%29.md) in this repository) the next step is to consume that data and one of the ways of consuming it is exposing it to business intelligence tools for BI analysis and dashboarding. This chapter will show how to connect PowerBI to WatsonX.data Developer-based Presto service.
 
 In the official WatsonX.data 
 [documentation](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-bi_intro) you can find two (2) ODBC engines mentioned, which can help you to connect to the Presto service inside of your WatsonX.data - Simba and CData. 
@@ -70,7 +75,7 @@ kubectl port-forward svc/ibm-lh-presto-svc 8443:8443 -n wxd
 
 5.5. The second suggested driver by the official documentation is not as successful and by the moment of writing this text I missed more information on how to configure it and Copilot or ChatGPT were sure this isn't possible to work with my Presto in WatsonX.data Developer. CData installs ok and you can configure it connects to your Presto ok but it's more complex to configure too. 
 
-Configure your CDAta driver with your Presto host, port, user and password:
+Configure your CData driver with your Presto host, port, user and password:
 
 ![CData settings](img/wxd515_cda_connectionconfiguration.png)
 
@@ -96,7 +101,7 @@ On the left panel find SSL certificate and copy it to the clipboard:
 
 ![CData Test connection success](img/wxd521_cdata_testconnectionsuccess.png)
 
-My problem was though that I couldn't have see my columns in the tables in Presto in the Metadata tab in CData Data Model Object Explorer:
+My problem was though that I couldn't see my columns in the tables in Presto in the Metadata tab in CData Data Model Object Explorer:
 
 ![Columns error](img/wxd522_cdata_columnsfailederror.png)
 
@@ -106,7 +111,7 @@ The problem manifests later on in PowerBI too and the table in effect won't load
 
 ![Final error](img/wxd524_powerbi_columnserror_finalerror.png)
 
-A workaround exists by creating manually User views, means custom ```SELECT``` statements in the Data Model Object Explorer in the CData ODBC driver but that means additional effort and maintainance and it's not something we want to be doing on production later on. 
+A workaround exists by creating manually User views, means custom ```SELECT``` statements in the Data Model Object Explorer in the CData ODBC driver but that means additional effort and maintenance and it's not something we want to be doing on production later on.
 
 This is the end of Part 5. Connecting BI (example PowerBI).
 
